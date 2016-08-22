@@ -1,9 +1,9 @@
 /**
- * Get a random integer number, between and including given min and max values.
+ * Get a random integer number, between given min (included) and max values (included).
  **/
-export default function getRandomInteger (min, max) {
-	let max = max + 1;
+exports.getRandomInteger  = function (min, max) {
+	let maxOut = max + 1;
 	min = Math.ceil(min);
-	max = Math.floor(max);
-	return Math.floor(Math.random() * (max - min)) + min;
+	maxOut = Math.floor(maxOut);
+	return Math.floor(Math.random() * (maxOut - min)) + min;
 };

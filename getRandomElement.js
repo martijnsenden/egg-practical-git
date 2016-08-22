@@ -1,8 +1,8 @@
-import getRandomInteger from './getRandomInteger';
+const getRandomInteger = require('./getRandomInteger');
 
 /**
  * Get a random Element from an array
  **/
-export default function getRandomElement (a) {
-	return a[getRandomInteger(0, a.length)];
+exports.getRandomElement = function (a) {
+	return a[getRandomInteger.getRandomInteger(0, a.length - 1)];
 };
