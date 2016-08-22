@@ -1,12 +1,8 @@
+import getRandomInteger from './getRandomInteger';
+
 /**
  * Get a random Element
  **/
 export default function getRandomElement (a) {
-	function getRandomInt(min, max) {
-		min = Math.ceil(min);
-		max = Math.floor(max);
-		return Math.floor(Math.random() * (max - min)) + min;
-	}
-
-	return a[getRandomInt(0, a.length)];
+	return a[getRandomInteger(0, a.length)];
 };
