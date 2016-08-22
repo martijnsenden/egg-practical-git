@@ -1,7 +1,7 @@
 /**
  * Get a random Element
  **/
-function getRandomElement (a) {
+export default function getRandomElement (a) {
 	function getRandomInt(min, max) {
 		min = Math.ceil(min);
 		max = Math.floor(max);
@@ -9,4 +9,4 @@ function getRandomElement (a) {
 	}
 
 	return a[getRandomInt(0, a.length)];
-}
+};
